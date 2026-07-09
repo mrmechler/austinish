@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austinish</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #000;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 32px 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+    }
+
+    main {
+      width: 100%;
+      max-width: 760px;
+      min-height: calc(100vh - 64px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: min(72vw, 420px);
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .tagline {
+      margin: 34px 0 0;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      line-height: 1.7;
+      text-transform: uppercase;
+    }
+
+    .footer-credit {
+      margin-top: 72px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-decoration: none;
+      transition: opacity 180ms ease, transform 180ms ease;
+      flex-wrap: wrap;
+    }
+
+    .footer-link:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+
+    .footer-label {
+      color: rgba(255, 255, 255, 0.44);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      line-height: 1;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transform: translateY(7px);
+    }
+
+    .signature-logo {
+      display: block;
+      width: min(30vw, 140px);
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 24px 20px;
+      }
+
+      main {
+        min-height: calc(100vh - 48px);
+      }
+
+      .logo {
+        width: min(78vw, 340px);
+      }
+
+      .tagline {
+        margin-top: 28px;
+        font-size: 10.5px;
+        letter-spacing: 0.17em;
+      }
+
+      .footer-credit {
+        margin-top: 56px;
+      }
+
+      .footer-link {
+        gap: 10px;
+      }
+
+      .footer-label {
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        transform: translateY(6px);
+      }
+
+      .signature-logo {
+        width: min(34vw, 120px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="keep-austinish-logo.png" alt="Keep Austin-ish" />
+
+    <p class="tagline">Grow Austin. Keep it Austin-ish.</p>
+
+    <div class="footer-credit">
+      <a class="footer-link" href="https://atxrealestate.com/" target="_blank" rel="noopener" aria-label="Austin real estate by Michael Mechler">
+        <span class="footer-label">AUSTIN REAL ESTATE BY</span>
+        <img class="signature-logo" src="mechler-signature.png" alt="Michael Mechler signature" />
+      </a>
+    </div>
+  </main>
+</body>
+</html>
