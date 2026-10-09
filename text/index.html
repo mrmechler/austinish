@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Text Michael at Austinish Creative Studio.">
+  <title>Text Michael — Austinish</title>
+  <style>
+    :root { --ink:#181a1b; --bronze:#ad835f; }
+    *, *::before, *::after { box-sizing:border-box; }
+    html { -webkit-text-size-adjust:100%; }
+    body {
+      margin:0;
+      min-height:100vh;
+      min-height:100svh;
+      display:flex;
+      flex-direction:column;
+      background:#fff;
+      color:var(--ink);
+      font-family:Arial,Helvetica,sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    .header { width:min(calc(100% - 80px), 1100px); margin:0 auto; min-height:116px; display:flex; align-items:center; }
+    .logo { display:inline-block; line-height:0; }
+    .logo img { display:block; width:182px; max-width:100%; height:auto; }
+    main { flex:1; display:grid; place-items:center; padding:40px 22px 100px; }
+    .message-button {
+      display:inline-flex; align-items:center; justify-content:center; gap:13px;
+      min-height:60px; min-width:206px; padding:17px 28px;
+      border:1px solid var(--ink); border-radius:4px;
+      background:var(--ink); color:#fff;
+      font-size:16px; font-weight:700; line-height:1.25;
+      text-decoration:none;
+      transition:background-color .15s ease, border-color .15s ease;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .message-button:hover { background:#343637; border-color:#343637; }
+    .message-button:focus-visible, .logo:focus-visible { outline:3px solid var(--bronze); outline-offset:5px; }
+    .message-button svg { width:21px; height:21px; flex:0 0 21px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+    @media(max-width:640px) {
+      .header { width:calc(100% - 44px); min-height:92px; }
+      .logo img { width:145px; }
+      main { padding:20px 22px 92px; }
+    }
+    @media(prefers-reduced-motion:reduce) { .message-button { transition:none; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="/" aria-label="Austinish home">
+      <img src="/assets/austinish-logo.png" alt="austinish." width="182" height="53">
+    </a>
+  </header>
+  <main>
+    <a class="message-button" href="sms:+15129372696" aria-label="Text Michael at 512 937 2696">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.98L3 21l1.98-5.5A8.7 8.7 0 0 1 4 11.5a8.5 8.5 0 1 1 17 0Z"/></svg>
+      Text Michael
+    </a>
+  </main>
+</body>
+</html>
